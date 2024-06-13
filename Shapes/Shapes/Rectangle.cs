@@ -10,7 +10,10 @@ namespace Shapes
     {
         public Point LetTop { get; set; }
         public double Width { get; set; }
-        public double Height { get; set; }  
+        public double Height { get; set; }
+
+        public override double Area => Width * Height;
+
         public Rectangle(Point leftTop, double width, double height) 
         { 
             LetTop = leftTop;
@@ -20,7 +23,7 @@ namespace Shapes
 
         public override void Draw()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Рисуем прямоугольник");
         }
     }
 }

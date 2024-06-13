@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public abstract class Shape : IDrawable
+    public interface IDrawable
     {
-        public abstract double Area {  get; }
-        public abstract void Draw();
+        void Draw();
     }
 }

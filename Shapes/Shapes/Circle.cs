@@ -11,6 +11,8 @@ namespace Shapes
         public Point Center { get; set; }
         public double Radius { get; set; }
 
+        public override double Area => Math.PI * Radius * Radius;
+
         public Circle(Point center, double radius) 
         { 
             Center = center;
@@ -19,7 +21,7 @@ namespace Shapes
 
         public override void Draw()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Рисуем круг");
         }
     }
 }
