@@ -22,8 +22,18 @@ namespace GraphicEditor
             var txt = new Caption("Hello,World", 10);
             shapes.Add(txt);
 
+            var triangle = new Triangle(new Point(0,1), new Point(3, 2), new Point(4, 3));
+            shapes.Add(triangle);
+
             foreach (var shape in shapes)
                 shape.Draw();
+
+            Console.WriteLine("\nВершины треугольника");
+
+            foreach (var vertex in triangle)
+                Console.WriteLine(vertex);
+
+            
 
 
             Console.ReadKey();
