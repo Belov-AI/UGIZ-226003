@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public class Triangle : Shape, IEnumerable
+    public class Triangle : Shape //, IEnumerable
     {
         Point a {  get; set; }
         Point b { get; set; }
         Point c { get; set; }
 
-        Point[] vertexes;
+        //Point[] vertexes;
 
         public override double Area
         {
@@ -33,7 +33,7 @@ namespace Shapes
             this.a = a;
             this.b = b;
             this.c = c;
-            vertexes = new Point[] { a, b, c };
+            //vertexes = new Point[] { a, b, c };
         }
 
         public override void Draw()
@@ -43,7 +43,11 @@ namespace Shapes
 
         public IEnumerator GetEnumerator()
         {
-            return vertexes.GetEnumerator();
+            //return vertexes.GetEnumerator();
+
+            yield return a;
+            yield return b;
+            yield return c;
         }
     }
 }
