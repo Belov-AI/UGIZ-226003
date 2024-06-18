@@ -9,7 +9,23 @@ namespace Shapes
     public class Circle : Shape
     {
         public Point Center { get; set; }
-        public double Radius { get; set; }
+
+        double radius;
+        public double Radius
+        {
+            get
+            {
+                return radius;
+            }
+
+            set
+            {
+                if (value > 0)
+                    radius = value;
+                else
+                    throw new ArgumentException("Радиус должен быть положительным");
+            }
+        }
 
         public override double Area => Math.PI * Radius * Radius;
 

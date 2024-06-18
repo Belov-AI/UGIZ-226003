@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicEditor", "GraphicEditor\GraphicEditor.csproj", "{2143B3EB-93E8-4DDC-9915-6420C6E933AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.UnitTests", "Shapes.UnitTests\Shapes.UnitTests.csproj", "{173EFDAD-4CC3-40B1-9D0F-282B13D84EAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2143B3EB-93E8-4DDC-9915-6420C6E933AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2143B3EB-93E8-4DDC-9915-6420C6E933AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2143B3EB-93E8-4DDC-9915-6420C6E933AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173EFDAD-4CC3-40B1-9D0F-282B13D84EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173EFDAD-4CC3-40B1-9D0F-282B13D84EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173EFDAD-4CC3-40B1-9D0F-282B13D84EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173EFDAD-4CC3-40B1-9D0F-282B13D84EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
