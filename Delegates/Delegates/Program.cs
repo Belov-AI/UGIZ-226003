@@ -24,6 +24,13 @@ namespace Delegates
 
             PrintFunctionTable(f, "x^3", 15);
 
+            int k = 3, b = -2;
+
+            PrintFunctionTable(x => x * x - 2 * x + 3, "x^2-2x+3", 10);
+
+            PrintFunctionTable(x => k * x + b, $"{k}x + ({b})", 20);
+
+
             Console.ReadKey();
         }
 
